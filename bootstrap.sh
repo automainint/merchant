@@ -13,7 +13,7 @@ wget https://download.electrum.org/4.3.4/Electrum-4.3.4.tar.gz.asc
 gpg --keyserver keyserver.ubuntu.com --recv-keys 637DB1E23370F84AFF88CCE03152347D07DA627C 0EEDCFD5CAFB459067349B23CA9EEEC43DF911DC 6694D8DE7BE8EE5631BED9502BD5824B7F9470E6
 gpg --verify Electrum-4.3.4.tar.gz.asc
 if [ $? -ne 0 ]; then exit 1; fi
-sudo -H pip3 install Electrum-4.3.4.tar.gz
+python3 pip install --user Electrum-4.3.4.tar.gz
 
 # install monero
 # TODO
