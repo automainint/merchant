@@ -1,5 +1,3 @@
-/*build*/
+/node_modules
+package-lock.json
 *.swp
-gen_inl
-gen_cmake
-build_c
